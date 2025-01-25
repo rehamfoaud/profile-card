@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./background.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    max-width: 370px;
+    padding: 25px;
+    box-shadow: 0 5px  15px rgba(0,0,0,0.2);
+    width: 100%;
+    background-color: #f1f1f1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+} 
+.card::before{
+    content: "";
+    position:absolute;
+    height: 33%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: blue;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+.image{
+    position:relative;
+    height:150px;
+    width: 150px;
+    padding: 3px;
+    background-color: blue;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    margin-bottom: 20px;
+}
+
+.image img{
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    color: #333;
+}
+.card .info .name{
+    font-size: 24px;
+    font-weight: 500px;
+}
+.social {
+    display: flex;
+    align-items: center;
+}
+.social a{
+    text-decoration: none;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width:34px;
+    height: 34px;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.social a:first-child{
+    background-color: rgb(65, 65, 173);
+}
+.social a:last-child{
+    background-color: red;
+}
+.social a:nth-of-type(2){
+    background-color:rgb(80, 113, 189);
+}
+.social a:nth-of-type(3){
+    background-color: rgb(180, 59, 79);
+}
+.btn{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.btn button{
+    font-size: 16px;
+    padding: 8px 20px;
+    margin: 0 17px;
+    background-image: linear-gradient(to right, #141088, #461ef7, #191762);
+    
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.btn button:hover{
+    background-image: linear-gradient( to left , #33308f, #211653, #514f93);
+}
+.card .icons{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.card .icons .icon{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #333;
+    border-right: 2px solid #ccc;
+}
+.card .icons .icon:last-child{
+    border-right: none;
+}
+.card .icons .icon i{
+    margin-right: 10px;
+}
